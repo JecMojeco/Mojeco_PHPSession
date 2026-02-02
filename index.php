@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $_SESSION['username']  = $username;
         $_SESSION['user_tier'] = $users[$username]['tier'];
         $_SESSION['last_activity'] = time();
-        $_SESSION['timestamp'] = time();
 
 
         header("Location: workout.php");
