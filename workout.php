@@ -27,7 +27,7 @@ $_SESSION['last_activity'] = time();
     <div class="alert alert-info">
         You're logged in as: <strong><?php echo htmlspecialchars(string: $_SESSION['username']); ?></strong> (<?php echo $_SESSION['user_tier']; ?>)
         <?php if (isset($_SESSION['last_activity'])): ?>
-        <p>Last activity: <strong><?php echo date('Y-m-d H:i:s', (int)$_SESSION['timestamp']); ?></strong></p>
+        <p>Last activity: <strong><?php echo date('Y-m-d H:i:s', (int)$_SESSION['last_activity']); ?></strong></p>
     <?php endif; ?>
     </div>
     
